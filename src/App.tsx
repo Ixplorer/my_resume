@@ -2,6 +2,7 @@ import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
 import { ProjectsSection } from './components/ProjectsSection';
+import { CurvedCarousel } from './components/CurvedCarousel';
 import { SkillsSection } from './components/SkillsSection';
 import { ExperienceSection } from './components/ExperienceSection';
 import { EducationSection } from './components/EducationSection';
@@ -15,6 +16,7 @@ function App() {
       <HeroSection />
       <AboutSection />
       <ProjectsSection />
+      <CurvedCarousel />
       <SkillsSection />
       <ExperienceSection />
       <EducationSection />
