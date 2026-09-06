@@ -1,38 +1,38 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 
 const bentoCategories = [
   {
-    title: 'FRONTEND ARCHITECTURE',
-    badge: 'CORE PILLAR',
-    items: ['React.js', 'React Native', 'Tailwind CSS', 'Electron.js'],
-    description: 'Specialized in building high-performance client applications, custom component libraries, and immersive desktop/mobile interfaces.',
-    stat: '100% RESPONSIVE',
+    title: 'WEB & APPLICATION DEVELOPMENT',
+    badge: 'FULL STACK',
+    items: ['PHP', 'Laravel', 'React 19', 'TypeScript', 'Tailwind CSS', 'MySQL', 'REST APIs'],
+    description: 'Expert in architecting custom web applications, e-learning platforms, enterprise ERP systems, and secure API integrations.',
+    stat: 'FULL STACK MVC',
     colSpan: 'lg:col-span-7',
   },
   {
-    title: 'DISTRIBUTED BACKEND',
-    badge: 'HIGH CONCURRENCY',
-    items: ['Node.js', 'Express.js', 'Spring Boot', 'Docker', 'Redis'],
-    description: 'Engineered RESTful APIs, JWT role-based access control, caching layers, and multi-tenant SaaS backend isolation.',
-    stat: '< 40ms LATENCY',
+    title: 'ENTERPRISE INFRASTRUCTURE & NETWORKING',
+    badge: 'CLOUD & HARDWARE',
+    items: ['Microsoft 365', 'Azure', 'Active Directory', 'Exchange Online', 'Sophos Firewalls', 'Cisco Switches', 'HP Servers', 'VPN'],
+    description: '13+ years managing multi-floor enterprise office networks for 150+ staff, server virtualization, cloud migration, and security firewalls.',
+    stat: '99.9% UPTIME',
     colSpan: 'lg:col-span-5',
   },
   {
-    title: 'DATA PLATFORMS',
-    badge: 'PERSISTENCE',
-    items: ['MongoDB Atlas', 'PostgreSQL', 'MySQL'],
-    description: 'Designing resilient relational and document schemas with optimized indexing and transaction isolation.',
-    stat: 'ACID & NOSQL',
+    title: 'IT OPERATIONS & CYBERSECURITY',
+    badge: 'GOVERNANCE & AUDIT',
+    items: ['SharePoint Assets', 'Biometrics (ZKTeco)', 'CS50 Cybersecurity', 'Python', 'Vendor SLA Audit', 'Helpdesk SLA'],
+    description: 'Building automated asset inventory management systems, technical procurement audits, biometric access control, and IT policy compliance.',
+    stat: 'ENTERPRISE READY',
     colSpan: 'lg:col-span-5',
   },
   {
-    title: 'ALGORITHMS & MACHINE LEARNING',
-    badge: 'INTELLIGENCE',
-    items: ['C++', 'Python', 'Java', 'scikit-learn', 'OpenAI API'],
-    description: '1200+ algorithm problems solved. Applied Random Forest classifiers for real-time risk heatmaps and NLP policy analyzers.',
-    stat: '1200+ SOLVED',
+    title: 'CREATIVE MEDIA & POWER SYSTEMS',
+    badge: 'MULTIMEDIA & ENERGY',
+    items: ['Professional Video Editing', 'Graphics Design', 'Brand Strategy', 'Standalone Solar Power', 'Servo Voltage Stabilizers'],
+    description: 'Directing digital campaign videos, infographics, and brand guidelines for international donor initiatives alongside solar power system setup.',
+    stat: 'CROSS-SECTOR IMPACT',
     colSpan: 'lg:col-span-7',
   },
 ];

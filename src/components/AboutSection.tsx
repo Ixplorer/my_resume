@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import aboutImg from '../assets/about.png';
@@ -120,10 +120,10 @@ export const AboutSection: React.FC = () => {
                 style={{ fontFamily: "'Bebas Neue', sans-serif" }}
               >
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#D5CBC0] to-[#605448] drop-shadow-[0_4px_10px_rgba(0,0,0,0.85)]">
-                  I DON'T JUST WRITE CODE.
+                  ENTERPRISE INFRASTRUCTURE
                 </span>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] drop-shadow-[0_8px_25px_rgba(201,158,93,0.3)]">
-                  I BUILD WHAT'S NEXT.
+                  & DIGITAL TRANSFORMATION.
                 </span>
               </h2>
             </motion.div>
@@ -131,10 +131,18 @@ export const AboutSection: React.FC = () => {
             {/* Concise Bio Paragraph */}
             <motion.p
               variants={fadeUpVariants}
-              className="text-xs sm:text-sm md:text-[14.5px] font-light text-[#B3A497] leading-[1.85] tracking-wide mb-10 max-w-xl"
+              className="text-xs sm:text-sm md:text-[14.5px] font-light text-[#B3A497] leading-[1.85] tracking-wide mb-6 max-w-xl"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
-              I'm <span className="text-[#F3DBB3] font-medium">Damisetti Shamya Lohitha</span>, a Full Stack Developer and Data Science student specializing in building scalable web architectures, AI-integrated platforms, and refined digital experiences. With a strong algorithmic foundation and a focus on clean engineering, I turn complex requirements into impactful products.
+              I'm <span className="text-[#F3DBB3] font-medium">Adedayo S. Adedeji</span>, a Senior Information Technology Specialist &amp; Enterprise Technology Consultant with over 13 years of cross-sector experience. Currently serving at CIHPNG, I lead enterprise IT infrastructure, cloud administration (M365, Azure), custom web application development (Laravel, React, PHP), and automated workflows.
+            </motion.p>
+
+            <motion.p
+              variants={fadeUpVariants}
+              className="text-xs sm:text-sm font-light text-[#9E8E81] leading-[1.8] tracking-wide mb-10 max-w-xl"
+              style={{ fontFamily: "'Montserrat', sans-serif" }}
+            >
+              Proven track record supporting international donor-funded initiatives across the <span className="text-[#E8D7C5]">EU, Ford Foundation, UN Women, NDI, IRI, DRF, OSIWA</span>, and <span className="text-[#E8D7C5]">CDC-PEPFAR</span>. Beneficiary of scholarships and professional development by the <span className="text-[#D4AF37]">US Embassy, Google, Andela, British Council, and GIZ</span>.
             </motion.p>
 
             {/* Concise 4-Item Achievement Metrics Grid */}
@@ -148,10 +156,10 @@ export const AboutSection: React.FC = () => {
                   className="text-3xl sm:text-4xl font-light text-[#F4EBE2] tracking-tight"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
-                  1200+
+                  13+
                 </span>
                 <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-[#A8988B] mt-0.5">
-                  DSA Solved
+                  Years IT Leadership
                 </span>
               </div>
 
@@ -161,10 +169,10 @@ export const AboutSection: React.FC = () => {
                   className="text-3xl sm:text-4xl font-light text-[#D4AF37] tracking-tight"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
-                  9.07
+                  150+
                 </span>
                 <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-[#A8988B] mt-0.5">
-                  B.Tech CGPA
+                  Enterprise Staff Supported
                 </span>
               </div>
 
@@ -174,10 +182,10 @@ export const AboutSection: React.FC = () => {
                   className="text-3xl sm:text-4xl font-light text-[#F4EBE2] tracking-tight"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
-                  40+
+                  7,700+
                 </span>
                 <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-[#A8988B] mt-0.5">
-                  Industry-Grade Projects
+                  Personnel Coordinated
                 </span>
               </div>
 
@@ -187,10 +195,10 @@ export const AboutSection: React.FC = () => {
                   className="text-3xl sm:text-4xl font-light text-[#D4AF37] tracking-tight"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
-                  Top 100
+                  4
                 </span>
                 <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-[#A8988B] mt-0.5">
-                  Myntra Hackerramp
+                  Global Donor Programs
                 </span>
               </div>
             </motion.div>
@@ -263,7 +271,7 @@ export const AboutSection: React.FC = () => {
                 {/* Main Portrait */}
                 <img
                   src={aboutImg}
-                  alt="Damisetti Shamya Lohitha"
+                  alt="Adedayo S. Adedeji"
                   className="w-full h-full object-cover object-top filter brightness-[0.94] contrast-[1.06] saturate-[1.02] group-hover:brightness-105 group-hover:contrast-[1.12] transition-all duration-700 ease-out"
                 />
 
@@ -285,7 +293,7 @@ export const AboutSection: React.FC = () => {
                     className="text-3xl text-[#F2D8A7] drop-shadow-[0_0_12px_rgba(242,216,167,0.5)] transition-colors duration-300 group-hover:text-white"
                     style={{ fontFamily: "'Herr Von Muellerhoff', cursive" }}
                   >
-                    Lohitha
+                    Adedayo
                   </span>
                 </div>
               </div>

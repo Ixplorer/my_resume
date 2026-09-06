@@ -1,5 +1,5 @@
 // src/components/ExperienceSection.tsx
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 interface RouteStop {
@@ -13,38 +13,38 @@ interface RouteStop {
 const journey: RouteStop[] = [
   {
     id: '01',
-    year: 'MAY - JUN 2026',
-    title: 'FULL STACK & MOBILE INTERN',
-    organization: 'TECHNICAL HUB PVT LTD',
-    description: 'Engineered cross-platform mobile and responsive web applications utilizing React Native and modern full-stack workflows.',
+    year: 'OCT 2024 - PRESENT',
+    title: 'SENIOR IT ASSOCIATE',
+    organization: 'CENTRE FOR INTEGRATED HEALTH PROGRAMS (CDC-PEPFAR)',
+    description: 'Redesigned official website; optimized network across 3 floors for 150+ staff using Sophos firewalls, HP servers, and Cisco switches; administered M365, Exchange Online, SharePoint & Active Directory; built SharePoint Asset Inventory system; conducted technical procurement bid analyses.',
   },
   {
     id: '02',
-    year: '2026 MILESTONE',
-    title: 'TOP 100 NATIONAL TEAM',
-    organization: 'MYNTRA WEFORSHE HACKERRAMP',
-    description: 'Ranked among the Top 100 nationwide teams while maintaining Department Topper status (9.07 CGPA) in Data Science.',
+    year: 'SEP 2023 - OCT 2024',
+    title: 'ICT OFFICER',
+    organization: 'TAF AFRICA (ABUJA)',
+    description: 'Restored & upgraded TAF Africa ElectionHub Dashboard for election monitoring; executed server backups & cloud upgrades; coordinated field observers and data analysts during the 2023 off-cycle elections in Kogi, Imo, and Bayelsa.',
   },
   {
     id: '03',
-    year: 'MAY - JUN 2025',
-    title: 'FULL STACK TRAINEE',
-    organization: 'TECHNICAL HUB PVT LTD',
-    description: 'Trained in modern full-stack architecture, developing and deploying end-to-end interactive responsive web platforms.',
+    year: 'JUN 2020 - JUL 2023',
+    title: 'ICT OFFICER',
+    organization: 'THE NIGERIAN WOMEN TRUST FUND (EU-SDGN II)',
+    description: 'Prototyped election observation app to monitor women participation; led brand identity strategy & website redesign; advised media equipment procurement for the Women Achievers Documentary.',
   },
   {
     id: '04',
-    year: '2023 - 2027',
-    title: 'B.TECH IN DATA SCIENCE',
-    organization: 'ADITYA COLLEGE OF ENGINEERING',
-    description: 'Specializing in Machine Learning and System Design. Solved 1200+ algorithm challenges across LeetCode, CodeChef, and GeeksforGeeks.',
+    year: '2020 - 2022',
+    title: 'IT & DIGITAL STRATEGY CONSULTANT',
+    organization: 'WODDI INITIATIVE • RUACH AGRIBUSINESS • FUTUREONE AFRICA TV',
+    description: 'Developed vocational e-learning platforms; conducted staff IT proficiency workshops; designed 50+ brand identity graphics cards and strategic marketing campaigns.',
   },
   {
     id: '05',
-    year: '2021 - 2023',
-    title: 'HIGHER SECONDARY (MPC)',
-    organization: 'SRI CHAITANYA JUNIOR COLLEGE',
-    description: 'Completed specialized coursework in Mathematics, Physics, and Chemistry with 90.60% aggregate excellence.',
+    year: 'MAR 2018 - FEB 2019',
+    title: 'GENERAL CORPS LIAISON OFFICER',
+    organization: 'NATIONAL YOUTH SERVICE CORPS (NYSC KATSINA)',
+    description: 'Mobilized 7,720 corps members for the 2019 general election; replaced a week-long manual data entry system with a digitized registration platform completed in 1 day; awarded Automatic Employment & Letter of Recommendation by NYSC State HQ.',
   },
 ];
 

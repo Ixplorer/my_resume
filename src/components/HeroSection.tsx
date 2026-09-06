@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import watermarkImg from '../assets/watermark.png';
@@ -27,13 +27,7 @@ const fadeUpVariants: Variants = {
   },
 };
 
-const navItems = [
-  { name: 'ABOUT', href: '#about' },
-  { name: 'PROJECTS', href: '#work' },
-  { name: 'SKILLS', href: '#skills' },
-  { name: 'EXPERIENCE', href: '#experience' },
-  { name: 'CONTACT', href: '#contact' },
-];
+
 
 export const HeroSection: React.FC = () => {
   const [cursorPos, setCursorPos] = useState({ x: -100, y: -100 });
@@ -107,57 +101,11 @@ export const HeroSection: React.FC = () => {
       </div>
 
       {/* ================= 4. CONTENT LAYER ================= */}
-      <div className="relative z-10 flex flex-col justify-between h-full w-full px-6 sm:px-12 lg:px-16 pt-6 pb-8 pointer-events-none">
-        
-        {/* Navigation Bar */}
-        <header className="relative flex items-center justify-between w-full pointer-events-auto">
-          <a
-            href="#"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            className="text-xs sm:text-sm font-semibold tracking-[0.35em] uppercase text-[#EAD8C7] hover:opacity-75 transition-opacity"
-            style={{ fontFamily: "'Montserrat', sans-serif" }}
-          >
-            LOHITHA.
-          </a>
-
-          {/* Navigation Links */}
-          <nav
-            className="hidden md:flex items-center space-x-8 lg:space-x-10 text-[11px] tracking-[0.28em] font-light uppercase text-[#C4B5A5] absolute left-1/2 -translate-x-1/2"
-            style={{ fontFamily: "'Montserrat', sans-serif" }}
-          >
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-                className="relative group py-1 transition-colors duration-300 hover:text-[#FFF5EB]"
-              >
-                {item.name}
-                <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#D4AF37]/50 transition-all duration-300 group-hover:w-full" />
-              </a>
-            ))}
-          </nav>
-
-          {/* Right Action */}
-          <a
-            href="#contact"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            className="group flex items-center space-x-2 text-[11px] tracking-[0.24em] font-light uppercase py-2 px-4 border border-[#8C6D4F]/50 hover:border-[#D4AF37] text-[#EAD8C7] transition-all duration-300 backdrop-blur-sm ml-auto md:ml-0"
-            style={{ fontFamily: "'Montserrat', sans-serif" }}
-          >
-            <span>LET&apos;S TALK</span>
-            <span className="transform transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-xs">
-              ↗
-            </span>
-          </a>
-        </header>
+      <div className="relative z-10 flex flex-col justify-between h-full w-full px-6 sm:px-12 lg:px-16 pt-20 pb-8 pointer-events-none">
 
         {/* Main Hero Row */}
         <div className="relative flex flex-col md:flex-row items-center justify-between w-full pt-4 pb-2 my-auto">
-          
+
           {/* LEFT: Balanced Headline & Actions */}
           <motion.div
             variants={containerVariants}
@@ -171,19 +119,19 @@ export const HeroSection: React.FC = () => {
                 className="text-6xl sm:text-7xl md:text-8xl lg:text-[7.2rem] xl:text-[7.8rem] tracking-tight uppercase leading-[0.83]"
                 style={{ fontFamily: "'Bebas Neue', sans-serif" }}
               >
-                {/* Line 1: I BUILD */}
+                {/* Line 1: ENTERPRISE IT */}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#D5CBC0] to-[#605448] drop-shadow-[0_4px_12px_rgba(0,0,0,0.85)]">
-                  I BUILD
+                  SENIOR IT &
                 </span>
 
-                {/* Line 2: DIGITAL */}
+                {/* Line 2: & SOFTWARE */}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] drop-shadow-[0_8px_25px_rgba(201,158,93,0.35)]">
-                  DIGITAL
+                  INFRASTRUCTURE
                 </span>
 
-                {/* Line 3: EXPERIENCES */}
+                {/* Line 3: SOLUTIONS */}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#DFBE8A] via-[#9B7640] to-[#342410] drop-shadow-[0_10px_30px_rgba(155,118,64,0.4)]">
-                  EXPERIENCES
+                  MANAGER
                 </span>
               </h1>
             </motion.div>
@@ -194,7 +142,7 @@ export const HeroSection: React.FC = () => {
                 className="text-[10px] sm:text-[11px] md:text-xs font-normal tracking-[0.28em] uppercase text-[#C4B29E]"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                FULL STACK DEVELOPER <span className="text-[#8C6D4F] mx-1">•</span> UI/UX DESIGNER <span className="text-[#8C6D4F] mx-1">•</span> DATA SCIENCE
+                BRAND & ICT CONSULTANT <span className="text-[#8C6D4F] mx-1">•</span> FULL STACK DEVELOPER <span className="text-[#8C6D4F] mx-1">•</span> INFRASTRUCTURE ARCHITECT
               </p>
             </motion.div>
 
@@ -205,9 +153,9 @@ export const HeroSection: React.FC = () => {
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
               <p>
-                I turn bold ideas into seamless digital experiences.
+                13+ years architecting enterprise IT systems, cloud infrastructure & web applications.
                 <br />
-                Where frontend meets powerful backend, and code transforms vision into impact.
+                Empowering international donor-funded programs (CDC-PEPFAR, EU, UN Women) through digital transformation.
               </p>
             </motion.div>
 
@@ -232,19 +180,17 @@ export const HeroSection: React.FC = () => {
                 </span>
               </motion.a>
 
-              {/* Download Resume Button */}
+              {/* Contact Me Button */}
               <motion.a
-                href="/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#contact"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 whileHover={{ scale: 1.02 }}
                 className="relative inline-flex items-center space-x-2 px-6 sm:px-7 py-3.5 border border-[#8C6D4F]/40 hover:border-[#8C6D4F] text-[#BFA895] hover:text-[#EAD8C7] text-[11px] font-medium tracking-[0.24em] uppercase transition-all duration-300"
               >
-                <span>DOWNLOAD RESUME</span>
-                <span className="transform transition-transform duration-300 group-hover:translate-y-0.5 text-xs">
-                  ↓
+                <span>GET IN TOUCH</span>
+                <span className="transform transition-transform duration-300 group-hover:translate-x-0.5 text-xs">
+                  →
                 </span>
               </motion.a>
             </motion.div>
@@ -263,26 +209,26 @@ export const HeroSection: React.FC = () => {
             </span>
 
             {/* 2. Compact Two-Line Statement */}
-            <div 
+            <div
               className="text-[9.5px] font-medium tracking-[0.24em] uppercase text-[#E0D3C5] space-y-1 mb-3"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
-              <p>CODE IS MY CRAFT.</p>
-              <p>IMPACT IS MY GOAL.</p>
+              <p>TECHNOLOGY IS MY CANVAS.</p>
+              <p>IMPACT IS MY BENCHMARK.</p>
             </div>
 
             {/* 3. Gold Accent Line */}
             <div className="w-28 h-[1px] bg-gradient-to-r from-[#D4AF37] via-[#E8D7C5]/70 to-transparent shadow-[0_0_8px_rgba(212,175,55,0.4)] mb-2" />
 
             {/* 4. Fine Monoline Calligraphy Signature */}
-            <div 
+            <div
               className="text-[2.2rem] text-[#D8AB64] font-normal leading-none -ml-0.5"
-              style={{ 
+              style={{
                 fontFamily: "'Herr Von Muellerhoff', 'Allura', cursive",
                 letterSpacing: '0.04em',
               }}
             >
-              Lohitha
+              Adedayo Adedeji
             </div>
           </motion.div>
         </div>

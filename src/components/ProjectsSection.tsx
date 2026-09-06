@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import ScrollStack, { ScrollStackItem } from './ScrollStack';
 
@@ -7,7 +6,9 @@ interface Project {
   title: string;
   category: string;
   description: string;
-  githubUrl: string;
+  githubUrl?: string;
+  liveUrl?: string;
+  liveUrlLabel?: string;
   tech: string[];
   metrics: { label: string; value: string }[];
 }
@@ -15,97 +16,92 @@ interface Project {
 const projects: Project[] = [
   {
     number: '01',
-    title: 'PolicyGuard AI',
-    category: 'AI / LEGAL-TECH PLATFORM',
+    title: 'Enterprise ERP & Automation Suite',
+    category: 'ENTERPRISE / PROCESS AUTOMATION',
     description:
-      'AI-powered platform engineered for automated privacy policy analysis and legal contract auditing across web, desktop, and mobile. Implements NLP extraction, real-time risk alert detection, and generative risk score intelligence.',
-    githubUrl: 'https://github.com/lohithadamisetti123',
+      'Custom web-based automated Enterprise Resource Planning suite engineered for CIHP. Features automated memo generation, job requisition modules, user authentication, multi-level approval workflows, auto-numbering, and print-ready outputs. Presented at the KOICA-SMEDAN Training of Trainers workshop in Abuja.',
+    liveUrl: 'https://cihpng.org/erp',
+    liveUrlLabel: 'LIVE ERP SYSTEM ↗',
     tech: [
-      'React.js',
-      'React Native',
-      'Electron.js',
-      'Node.js',
-      'Express.js',
-      'MongoDB Atlas',
-      'OpenAI API',
-      'Prompt Eng',
-      'NLP',
-      'Docker',
-      'JWT',
+      'PHP',
+      'Laravel',
+      'React',
+      'MySQL',
+      'Active Directory',
+      'Workflow Automation',
+      'Tailwind CSS',
+      'REST APIs',
     ],
     metrics: [
-      { label: 'PLATFORMS', value: 'Web, Mobile, Desktop' },
-      { label: 'ENGINE', value: 'OpenAI NLP / GPT' },
-      { label: 'PIPELINE', value: 'Automated Scoring' },
+      { label: 'ORGANIZATION', value: 'CIHP Enterprise' },
+      { label: 'LIVE PORTAL', value: 'cihpng.org/erp' },
+      { label: 'SHOWCASE', value: 'KOICA-SMEDAN Workshop' },
     ],
   },
   {
     number: '02',
-    title: 'Software Release Risk Heatmap',
-    category: 'MACHINE LEARNING / DEV PLATFORM',
+    title: 'TAF Africa ElectionHub Dashboard',
+    category: 'ELECTION MONITORING / GOV-TECH',
     description:
-      'Full-stack predictive release management platform utilizing Machine Learning. Implements a trained Random Forest classifier to categorize release stability from Low to Critical risk, rendered over a live interactive team heatmap.',
-    githubUrl: 'https://github.com/lohithadamisetti123',
+      'Restored, upgraded, and secured the official TAF Africa ElectionHub Dashboard platform. Coordinated field observers and data analysts during the 2023 off-cycle elections in Kogi, Imo, and Bayelsa to monitor electoral integrity and accessibility for PWDs.',
+    liveUrl: 'https://electionhub.org.ng/',
+    liveUrlLabel: 'LIVE ELECTION DASHBOARD ↗',
     tech: [
-      'React.js',
-      'TypeScript',
-      'Python',
-      'FastAPI',
-      'scikit-learn',
-      'PostgreSQL',
-      'Tailwind CSS',
-      'REST APIs',
-      'JWT',
+      'PHP',
+      'JavaScript',
+      'MySQL',
+      'Cloud Backups',
+      'Security Hardening',
+      'Data Analytics',
     ],
     metrics: [
-      { label: 'MODEL', value: 'Random Forest' },
-      { label: 'ACCURACY', value: 'High Precision' },
-      { label: 'DASHBOARD', value: 'Live Risk Heatmap' },
+      { label: 'PLATFORM', value: 'electionhub.org.ng' },
+      { label: 'ELECTIONS', value: 'Kogi, Imo, Bayelsa 2023' },
+      { label: 'ADVOCACY', value: 'Disability Inclusiveness' },
     ],
   },
   {
     number: '03',
-    title: 'Multi-Tenant SaaS Platform',
-    category: 'CLOUD / DISTRIBUTED SYSTEM',
+    title: 'CIHP Official Website & Network Infrastructure',
+    category: 'ENTERPRISE WEB & INFRASTRUCTURE',
     description:
-      'Enterprise-grade multi-tenant platform built for unified management of teams, projects, and execution lifecycles. Architected with strict tenant data isolation, granular Role-Based Access Control (RBAC), and containerized deployments.',
-    githubUrl: 'https://github.com/lohithadamisetti123',
+      'Redesigned the official CIHP website with modern UX and essential feature pages. Managed network infrastructure across 3 office floors for 150+ staff using Sophos firewalls, HP servers, Cisco switches, M365, Exchange Online, SharePoint, and Active Directory.',
+    liveUrl: 'https://www.cihpng.org',
+    liveUrlLabel: 'VISIT CIHP WEBSITE ↗',
     tech: [
-      'Node.js',
-      'Express.js',
-      'PostgreSQL',
-      'React',
-      'Docker',
-      'JWT',
-      'RBAC',
-      'REST APIs',
+      'Sophos Firewall',
+      'HP Servers',
+      'Cisco Switches',
+      'M365 / Active Directory',
+      'SharePoint Assets',
+      'PHP / Web',
     ],
     metrics: [
-      { label: 'ARCHITECTURE', value: 'Multi-Tenant' },
-      { label: 'SECURITY', value: 'RBAC Isolation' },
-      { label: 'CONTAINERS', value: 'Docker Compose' },
+      { label: 'SITE', value: 'cihpng.org' },
+      { label: 'NETWORK', value: '3 Office Floors / 150+ Staff' },
+      { label: 'DONOR', value: 'CDC-PEPFAR' },
     ],
   },
   {
     number: '04',
-    title: 'Payment Gateway with Hosted Checkout',
-    category: 'FINTECH / PAYMENT SYSTEMS',
+    title: 'Tradeskill & Enterprise Web Platforms',
+    category: 'EDTECH / CLIENT DIGITAL PLATFORMS',
     description:
-      'End-to-end hosted payment gateway infrastructure supporting seamless merchant order generation, multi-currency processing, and secure consumer checkout via UPI and Cards with webhook transaction verification.',
-    githubUrl: 'https://github.com/lohithadamisetti123',
+      'Engineered vocational e-learning applications with Paystack gateway integration alongside enterprise web platforms including Britson & Partners, The HERF, and Life Inspired Academy.',
+    liveUrl: 'https://britsonandpartners.com/',
+    liveUrlLabel: 'EXPLORE LIVE PORTFOLIO ↗',
     tech: [
-      'Node.js',
-      'Spring Boot',
-      'PostgreSQL',
-      'React',
-      'Docker',
-      'REST APIs',
-      'UPI / Card Integrations',
+      'PHP',
+      'Laravel',
+      'Paystack API',
+      'MySQL',
+      'Tailwind CSS',
+      'Brand Identity',
     ],
     metrics: [
-      { label: 'PROTOCOLS', value: 'UPI & Cards' },
-      { label: 'BACKEND', value: 'Spring Boot + Node' },
-      { label: 'DATABASE', value: 'ACID PostgreSQL' },
+      { label: 'E-LEARNING', value: 'Paystack Integrated' },
+      { label: 'CLIENT SITES', value: 'Britson, HERF, LifeInspired' },
+      { label: 'DEPLOYMENTS', value: 'Live Web Services' },
     ],
   },
 ];
@@ -265,14 +261,13 @@ export const ProjectsSection: React.FC = () => {
                     </div>
 
                     <a
-                      href={project.githubUrl}
+                      href={project.liveUrl || project.githubUrl || '#'}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center space-x-3 px-6 py-3.5 border border-[#8C6D4F] bg-[#16120E] hover:border-[#D4AF37] hover:bg-[#D4AF37] text-[#EAD8C7] hover:text-black text-[11px] font-medium tracking-[0.24em] uppercase transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.1)]"
                       style={{ fontFamily: "'Montserrat', sans-serif" }}
                     >
-                      <span>VIEW ON GITHUB</span>
-                      <span className="text-xs">↗</span>
+                      <span>{project.liveUrlLabel || 'VIEW PROJECT ↗'}</span>
                     </a>
                   </div>
 

@@ -1,5 +1,5 @@
 // src/components/ContactSection.tsx
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 export const ContactSection: React.FC = () => {
@@ -66,8 +66,28 @@ export const ContactSection: React.FC = () => {
                 className="text-xs sm:text-[13px] font-light text-[#A8988B] leading-relaxed max-w-md"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                Have an ambitious system to architect, an engineering opportunity, or a collaborative inquiry? Send a direct dispatch below.
+                Have an enterprise IT system to architect, a consultancy engagement, or a technical inquiry? Send a direct message or connect via the details below.
               </p>
+
+              {/* Direct Contact & Social Links */}
+              <div className="mt-8 space-y-4 text-xs font-mono text-[#C4B29E]">
+                <div>
+                  <span className="block text-[9.5px] tracking-[0.2em] text-[#8C6D4F] uppercase">// DIRECT EMAIL</span>
+                  <a href="mailto:ixplorerng@yahoo.com" className="hover:text-[#D4AF37] transition-colors">ixplorerng@yahoo.com</a>
+                </div>
+                <div>
+                  <span className="block text-[9.5px] tracking-[0.2em] text-[#8C6D4F] uppercase">// PHONE</span>
+                  <span className="text-[#E8DFD8]">+234 905 863 6571 | 0810 312 4456</span>
+                </div>
+                <div>
+                  <span className="block text-[9.5px] tracking-[0.2em] text-[#8C6D4F] uppercase">// ONLINE PRESENCE</span>
+                  <div className="flex flex-wrap gap-4 mt-1.5 text-[11px] font-sans">
+                    <a href="https://www.ixplorer.org" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors text-[#F3DBB3]">Website ↗</a>
+                    <a href="https://www.linkedin.com/in/ixplorer/" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors text-[#F3DBB3]">LinkedIn ↗</a>
+                    <a href="https://instagram.com/ixplorerconcept" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors text-[#F3DBB3]">Instagram ↗</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
